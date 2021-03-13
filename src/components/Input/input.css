@@ -3,7 +3,7 @@
 	height: max-content;
 	display: flex;
 	align-items: baseline;
-	justify-content: start;
+	justify-content: flex-start;
 	flex-direction: column;
 	border-radius: 0.5rem;
 }

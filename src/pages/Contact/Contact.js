@@ -1,26 +1,17 @@
 import React from "react";
 import {
-  Breadcrumb,
-  BreadcrumbItem,
   Label,
   Col,
   Button,
   Row,
 } from "reactstrap";
-import { Link } from "react-router-dom";
-import Input from "../components/Input/Input";
+import Input from "../../components/Input/Input";
 
 const Contact = () => {
   return (
     <>
       <div className="container">
         <div className="row">
-          <Breadcrumb>
-            <BreadcrumbItem>
-              <Link to="/home">Home</Link>
-            </BreadcrumbItem>
-            <BreadcrumbItem active>Contact Us</BreadcrumbItem>
-          </Breadcrumb>
           <div className="col-12">
             <h3>Contact Us</h3>
             <hr />
@@ -59,7 +50,7 @@ const Contact = () => {
               >
                 <i className="fa fa-phone"></i> Call
               </a>
-              <a role="button" className="btn btn-info" href>
+              <a role="button" className="btn btn-info">
                 <i className="fa fa-skype"></i> Skype
               </a>
               <a

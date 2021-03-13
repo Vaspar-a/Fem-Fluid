@@ -14,6 +14,7 @@
   background-color: rgb(186, 207, 212);
   margin: 0px auto;
   padding: 20px 0px 0px 0px;
+  width: 100vw;
 }
 
 .jumbotron {
@@ -63,4 +64,12 @@
   opacity: 0.01;
   transform: translateX(100%);
   transition: all 300ms ease-out;
+}
+
+.container {
+  padding-bottom: 2rem;
+}
+
+.carousel {
+  width: 100vw;
 }

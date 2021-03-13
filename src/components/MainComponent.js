@@ -1,28 +1,33 @@
-import React, { Component } from "react";
-import Menu from "./CardComponent";
-import DishDetails from "./DishDetailComponent";
-import Header from "./Header";
+import React from "react";
+import Header from "./Header/Header";
 import Footer from "./Footer";
-import Home from "./Home";
-import Contact from "../pages/Contact";
-import About from "../pages/About";
+import Home from "../pages/Home/Home";
+import Contact from "../pages/Contact/Contact";
+import About from "../pages/About/About";
 import { Switch, Route, Redirect} from "react-router-dom";
 import {
   TransitionGroup,
   CSSTransition,
 } from "react-transition-group";
 
+const menus = [
+  {text: 'Home', icon: 'fa fas-home', link: 'home'},
+  {text: 'Products', icon: 'fa fas-list', link: 'products'},
+  {text: 'About Us', icon: 'fa fas-info', link: 'about'},
+  {text: 'Contact', icon: 'fa fas-address-card', link: 'contact'},
+]
+
 const Main = () => {
     return (
       <>
-        <Header />
+        <Header menus={menus} />
         <TransitionGroup>
           <CSSTransition
             classNames="page"
             timeout={300}
           >
             <Switch>
-              {/* <Route path="/home" component={HomePage} /> */}
+              <Route path="/home" component={Home} />
               {/* <Route
                 exact
                 path="/products"
@@ -30,17 +35,17 @@ const Main = () => {
               /> */}
               <Route
                 exact
-                path="/contactus"
+                path="/contact"
                 component={() => (
                   <Contact />
                 )}
               />
               <Route
                 exact
-                path="/aboutus"
+                path="/about"
                 component={() => <About />}
               />
-              <Redirect to="/contactus" />
+              <Redirect to="/home" />
             </Switch>
           </CSSTransition>
         </TransitionGroup>
