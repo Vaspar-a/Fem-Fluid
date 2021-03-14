@@ -158,6 +158,8 @@ header {
     
     .nav-links {
         position: fixed;
+        top: 0;
+        left: 0;
         background-color: aliceblue; 
         /* rgba(77, 210, 193, 0.4) */
         height: 100vh;

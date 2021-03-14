@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 class Footer extends Component {
   render() {
@@ -10,10 +10,10 @@ class Footer extends Component {
                 <div className="col-4 col-sm-2 offset-1">
                     <h5>Links</h5>
                     <ul className="list-unstyled">
-                        <li><Link to="/home">Home</Link></li>
-                        <li><Link to="/aboutus">About</Link></li>
-                        <li><Link to="/products">Products</Link></li>
-                        <li><Link to="/contactus">Contact</Link></li>
+                        <li><NavLink to="home" className="footer-link-color">Home</NavLink></li>
+                        <li><NavLink to="about" className="footer-link-color">About</NavLink></li>
+                        <li><NavLink to="products" className="footer-link-color">Products</NavLink></li>
+                        <li><NavLink to="contact" className="footer-link-color">Contact</NavLink></li>
                     </ul>
                 </div>
                 <div className="col-7 col-sm-5">

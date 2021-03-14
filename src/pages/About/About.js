@@ -1,77 +1,102 @@
 import React from "react";
-import {
-  Card,
-  CardBody,
-  CardHeader,
-} from "reactstrap";
+import instrument1 from "../../assets/images/20151225_160518.jpg";
+import instrument2 from "../../assets/images/Picture1.jpg";
+import result1 from "../../assets/images/Result.jpg";
+import result2 from "../../assets/images/Test result 2.png";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+
+const menus = [
+  {text: 'Home', icon: 'fa fas-home', link: 'home'},
+  {text: 'Products', icon: 'fa fas-list', link: 'products'},
+  {text: 'About Us', icon: 'fa fas-info', link: 'about'},
+  {text: 'Contact', icon: 'fa fas-address-card', link: 'contact'},
+]
 
 const About = () => {
   return (
-      <>
-    <div className="container about-container">
-      <div className="row">
-        <div className="col-12">
-          <h3>About Us</h3>
-          <hr />
+    <>
+<Header menus={menus} />
+      <div className="container about-container">
+        <div className="row">
+          <div className="col-12">
+            <h3>About Us</h3>
+            <hr />
+          </div>
+        </div>
+        <div className="row row-content">
+          <div className="col-12">
+            <h2>Next Generation Smart Materials</h2>
+            <p>
+              Fem Fluid is a diversifed company dedicated to development and
+              application of new generaton of products.
+            </p>
+
+            <p>
+              Our knowlwdge stems from our core group who specialize in design,
+              synthesis and mechanier. With basic knowlwdge our company has
+              established a strong lab quuipped for performance as weel as
+              application driven instrument that simulate real world conditions.
+            </p>
+
+            <p>
+              As a company Fem Fluid is dedicated and drawn by a core to belief
+              to convert basic sciences into useful technologies and products.
+            </p>
+          </div>
+          <div className="col-12">
+            <h2>Our Infrastructure</h2>
+            <p>
+              Fem Fluid has coe team who are strong in basic chemistry, nano
+              synthesis and mechanical engineering. To complement that Fem Fluid
+              has some useful and widely used lab equipment for development and
+              routine testing of MR Fluids.
+            </p>
+
+            <p>
+              Our knowlwdge stems from our core group who specialize in design,
+              synthesis and mechanier. With basic knowlwdge our company has
+              established a strong lab quuipped for performance as weel as
+              application driven instrument that simulate real world conditions.
+            </p>
+
+            <p>
+              As a company Fem Fluid is dedicated and drawn by a core to belief
+              to convert basic sciences into useful technologies and products.
+            </p>
+          </div>
+          <div className="col-12">
+            <h2>Lab Instruments</h2>
+            <ul className="list-group">
+              <li className="list-group-item">Magneto Rheometer</li>
+              <li className="list-group-item">
+                Vibating Sampling Magnetometer
+              </li>
+              <li className="list-group-item">XRD Analysis</li>
+              <li className="list-group-item">Damper Rig</li>
+              <li className="list-group-item">MR Brake Rig</li>
+              <li className="list-group-item">Four ball and Weld Load</li>
+            </ul>
+          </div>
+        </div>
+        <div className="row row-content mt-3">
+          <div className="col-12 col-md-6">
+            <img width={"100%"} src={instrument1} alt={"Instrument 1"} />
+          </div>
+          <div className="col-12 col-md-6">
+            <img width={"100%"} src={instrument2} alt={"Instrument 2"} />
+          </div>
+        </div>
+        <div className="row row-content mt-3">
+          <div className="col-12 col-md-6">
+            <img width={"100%"} src={result1} alt={"Result 1"} />
+          </div>
+          <div className="col-12 col-md-6">
+            <img width={"100%"} src={result2} alt={"Result 1"} />
+          </div>
         </div>
       </div>
-      <div className="row row-content">
-        <div className="col-12 col-md-6">
-          <h2>Our History</h2>
-          <p>
-            Started in 2002, Fem Fluid quickly established itself as a
-            engineering corporation par excellence in India. With its unique
-            brand of engineering solutions that can be found nowhere else, it
-            enjoys patronage from the A-list clientele in India. Providing the
-            best engineering solutions in the world, since 2002.
-          </p>
-          <p>
-            The corporation traces its humble beginnings to{" "}
-            <em>MR Dampers</em>, a successful tool invented by our CEO, Mr.
-            Shankar Venkatraman, that featured for the first time in the world's best
-            engineering tools.
-          </p>
-        </div>
-        <div className="col-12 col-md-5">
-          <Card>
-            <CardHeader className="bg-primary text-white">
-              Facts At a Glance
-            </CardHeader>
-            <CardBody>
-              <dl className="row p-1">
-                <dt className="col-6">Started</dt>
-                <dd className="col-6">1 April 2002</dd>
-                <dt className="col-6">Major Stake Holder</dt>
-                <dd className="col-6">Fem Fluid Inc.</dd>
-                <dt className="col-6">Last Year's Turnover</dt>
-                <dd className="col-6">$250,375</dd>
-                <dt className="col-6">Employees</dt>
-                <dd className="col-6">20</dd>
-              </dl>
-            </CardBody>
-          </Card>
-        </div>
-        <div className="col-12">
-          <Card>
-            <CardBody className="bg-faded">
-              <blockquote className="blockquote">
-                <p className="mb-0">
-                  At its heart engineering is about using science to find
-                  creative practical solutions. It’s a noble profession.
-                </p>
-                <footer className="blockquote-footer">
-                  Queen Elizabeth II,{" "}
-                  <cite title="Source Title">
-                    A speech by The Queen at The Queen Elizabeth prize for
-                    Engineering, 2013
-                  </cite>
-                </footer>
-              </blockquote>
-            </CardBody>
-          </Card>
-        </div>
-      </div>
-    </div>
+      <Footer />
     </>
   );
 };

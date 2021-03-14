@@ -1,15 +1,20 @@
 import React from "react";
-import {
-  Label,
-  Col,
-  Button,
-  Row,
-} from "reactstrap";
+import { Label, Col, Button, Row } from "reactstrap";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 import Input from "../../components/Input/Input";
+
+const menus = [
+  { text: "Home", icon: "fa fas-home", link: "home" },
+  { text: "Products", icon: "fa fas-list", link: "products" },
+  { text: "About Us", icon: "fa fas-info", link: "about" },
+  { text: "Contact", icon: "fa fas-address-card", link: "contact" },
+];
 
 const Contact = () => {
   return (
     <>
+      <Header menus={menus} />
       <div className="container">
         <div className="row">
           <div className="col-12">
@@ -49,9 +54,6 @@ const Contact = () => {
                 href="tel:02697-265011"
               >
                 <i className="fa fa-phone"></i> Call
-              </a>
-              <a role="button" className="btn btn-info">
-                <i className="fa fa-skype"></i> Skype
               </a>
               <a
                 role="button"
@@ -139,6 +141,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
