@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import Home from "./Home";
 import Contact from "../pages/Contact";
 import About from "../pages/About";
+import Product from "../pages/Product"
 import { Switch, Route, Redirect} from "react-router-dom";
 import {
   TransitionGroup,
@@ -39,6 +40,11 @@ const Main = () => {
                 exact
                 path="/aboutus"
                 component={() => <About />}
+              />
+              <Route
+                exact
+                path="/product"
+                component={() => <Product />}
               />
               <Redirect to="/contactus" />
             </Switch>
