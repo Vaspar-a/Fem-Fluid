@@ -26,18 +26,18 @@ const Product = () => {
   return (
     <>
     <Header menus={menus} />
-      <div className="container">
+      <main className="container">
         <div className="row">
           <div className="col-12">
             <h3>Product</h3>
             <hr />
           </div>
-          <div>
+          <section>
             <CardGroup>
               <Card>
               <CardImg height="40%" width="40%" src={FluidImg} alt={'MR Fluid'} />
                 <CardBody>
-                  <CardTitle>MR fluid</CardTitle>
+                  <CardTitle>MR Fluid</CardTitle>
                   <CardText>
                     Magnetorheological fluids is commonly known as MR Fluids. MR
                     fluids are basically a mixture of mineral oil or synthetic
@@ -112,7 +112,7 @@ const Product = () => {
               </Card>
 
               <Card>
-              <CardImg height="40%" width="40%" src={DamperImg} alt={'MR Fluid'} />
+              <CardImg height="39.95%" width="40%" src={DamperImg} alt={'MR Fluid'} />
                 <CardBody>
                   <CardTitle>MR Damper</CardTitle>
                   <CardText>
@@ -131,7 +131,7 @@ const Product = () => {
                   </Button>
                   <UncontrolledCollapse toggler="#MR_Damper">
                     <Card>
-                      <CardTitle>Application of MR damper</CardTitle>
+                      <CardTitle>Application of MR Damper</CardTitle>
                       <CardBody>
                         <ul>
                           <li>Front load Washing machine (Shear mode)</li>
@@ -148,9 +148,9 @@ const Product = () => {
                 </CardBody>
               </Card>
             </CardGroup>
-          </div>
+          </section>
         </div>
-      </div>
+      </main>
       <Footer />
     </>
   );

@@ -31,8 +31,9 @@
     resize: none;
 }
 
-.wrapper .input-container .input:focus, .textarea:focus, .btn:focus {
-	border: 2px solid #127cd3 !important;
+.wrapper .input-container .input:focus, .textarea:focus {
+	/* box-shadow: 0 0 0.2rem rgb(38, 143, 255, 0.5); */
+	border: 2px solid #127cd3d2 !important;
 }
 
 .wrapper .input-container:hover .tooltip {

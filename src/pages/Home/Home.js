@@ -5,6 +5,7 @@ import slide1 from "../../assets/images/Flow mode.jpg";
 import slide2 from "../../assets/images/shear mode.jpg";
 import slide3 from "../../assets/images/IMG_20171106_105106.jpg";
 import { NavLink } from "react-router-dom";
+import { Button } from "reactstrap";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 
@@ -20,8 +21,8 @@ export default class Home extends Component {
     return (
       <>
         <Header menus={menus} />
-        <section>
-          <div className="slider">
+        <main>
+          {/* <div className="slider"> */}
             <div
               id="carouselExampleIndicators"
               className="carousel slide"
@@ -91,8 +92,8 @@ export default class Home extends Component {
                 <span className="sr-only">Next</span>
               </a>
             </div>
-            {/* <h1 className="title">About us</h1> */}
-            <div className="content">
+            <h1 className="title">About us</h1>
+            <section className="content">
               <h4>Next Generation Smart Materials</h4>
               <p className="text">
                 &#8921; Fem Fluid is a diversifed company dedicated to
@@ -113,11 +114,13 @@ export default class Home extends Component {
               </p>
               {/* <Navlink></Navlink> */}
               <NavLink to="about" className="link-to">
-                <button className="btn-about"><span>About Us</span></button>
+              <Button color="primary">
+                    About
+                  </Button>
               </NavLink>
-            </div>
-          </div>
-        </section>
+            </section>
+          {/* </div> */}
+        </main>
         <Footer />
       </>
     );
