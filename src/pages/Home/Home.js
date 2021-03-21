@@ -73,7 +73,7 @@ export default class Home extends Component {
                 data-slide="prev"
               >
                 <span
-                  className="carousel-control-prev-icon"
+                  className="arrow left"
                   aria-hidden="true"
                 ></span>
                 <span className="sr-only">Previous</span>
@@ -85,7 +85,7 @@ export default class Home extends Component {
                 data-slide="next"
               >
                 <span
-                  className="carousel-control-next-icon"
+                  className="arrow right"
                   aria-hidden="true"
                 ></span>
                 <span className="sr-only">Next</span>

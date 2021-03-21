@@ -43,7 +43,7 @@ class Footer extends Component {
             </div>
             <div className="row justify-content-center">
                 <div className="col-auto">
-                    <p className="copyright">© Copyright 2018 Fem Fluid</p>
+                    <p className="copyright">© Copyright 2022 Fem Fluid</p>
                 </div>
             </div>
         </div>
