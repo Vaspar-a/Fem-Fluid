@@ -95,6 +95,8 @@ export default class Input extends Component {
       this.pattern =
         "[(http(s)?):\\/\\/(www\\.)?a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)";
       this.setState({type: "url"});
+    } else {
+      this.pattern = this.props.pattern;
     }
   }
 

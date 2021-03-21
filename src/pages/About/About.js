@@ -17,7 +17,7 @@ const About = () => {
   return (
     <>
 <Header menus={menus} />
-      <div className="container about-container">
+      <main className="container about-container">
         <div className="row">
           <div className="col-12">
             <h3>About Us</h3>
@@ -25,7 +25,7 @@ const About = () => {
           </div>
         </div>
         <div className="row row-content">
-          <div className="col-12">
+          <section className="col-12">
             <h2>Next Generation Smart Materials</h2>
             <p>
               Fem Fluid is a diversifed company dedicated to development and
@@ -43,8 +43,8 @@ const About = () => {
               As a company Fem Fluid is dedicated and drawn by a core to belief
               to convert basic sciences into useful technologies and products.
             </p>
-          </div>
-          <div className="col-12">
+          </section>
+          <section className="col-12">
             <h2>Our Infrastructure</h2>
             <p>
               Fem Fluid has coe team who are strong in basic chemistry, nano
@@ -64,8 +64,8 @@ const About = () => {
               As a company Fem Fluid is dedicated and drawn by a core to belief
               to convert basic sciences into useful technologies and products.
             </p>
-          </div>
-          <div className="col-12">
+          </section>
+          <section className="col-12">
             <h2>Lab Instruments</h2>
             <ul className="list-group">
               <li className="list-group-item">Magneto Rheometer</li>
@@ -77,25 +77,25 @@ const About = () => {
               <li className="list-group-item">MR Brake Rig</li>
               <li className="list-group-item">Four ball and Weld Load</li>
             </ul>
-          </div>
+          </section>
         </div>
-        <div className="row row-content mt-3">
+        <section className="row row-content mt-3">
           <div className="col-12 col-md-6">
             <img width={"100%"} src={instrument1} alt={"Instrument 1"} />
           </div>
           <div className="col-12 col-md-6">
             <img width={"100%"} src={instrument2} alt={"Instrument 2"} />
           </div>
-        </div>
-        <div className="row row-content mt-3">
+        </section>
+        <section className="row row-content mt-3">
           <div className="col-12 col-md-6">
             <img width={"100%"} src={result1} alt={"Result 1"} />
           </div>
           <div className="col-12 col-md-6">
             <img width={"100%"} src={result2} alt={"Result 1"} />
           </div>
-        </div>
-      </div>
+        </section>
+      </main>
       <Footer />
     </>
   );

@@ -31,6 +31,10 @@
   color: #0f0f0f;
 }
 
+.address a, address a  {
+  color: #0f0f0f;
+}
+
 .copyright {
   font-size: 75%;
   margin-top: 5%;
@@ -54,4 +58,9 @@
 
 .footer-link-color {
   color: #1D3557;
+}
+
+.card-title {
+  font-weight: bolder;
+  font-size: 1.12rem;
 }
