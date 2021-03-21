@@ -74,7 +74,7 @@ export default class Home extends Component {
                 data-slide="prev"
               >
                 <span
-                  className="carousel-control-prev-icon"
+                  className="arrow left"
                   aria-hidden="true"
                 ></span>
                 <span className="sr-only">Previous</span>
@@ -86,7 +86,7 @@ export default class Home extends Component {
                 data-slide="next"
               >
                 <span
-                  className="carousel-control-next-icon"
+                  className="arrow right"
                   aria-hidden="true"
                 ></span>
                 <span className="sr-only">Next</span>
@@ -100,14 +100,16 @@ export default class Home extends Component {
                 development and application of new generaton of product.
               </p>
               <p className="text">
-                &#8921; Our knowlwdge stems from our core group who specialize
-                in design, synthesis and mechanier. With basic knowlwdge our
-                company has established a strong lab quuipped for performance as
-                weel as application driven instrument that simulate real world
-                conditions.
+                &#8921; Our knowlwdge stems from our core group who specialize in design, 
+                synthesis and mechanier. With basic knowlwdge our company has established 
+                a strong lab quuipped for performance as weel as application driven instrument 
+                that simulate real world conditions.
               </p>
+              <p className="text">&#8921; As a company Fem Fluid is dedicated and drawn 
+              by a core to belief to convert basic sciences into useful technologies
+               and products.</p>
               <p className="text">
-                &#8921; To know more about us..click below button or go to about
+                &#8921; To know more about us, click below button or go to about section
                 section
               </p>
               {/* <Navlink></Navlink> */}

@@ -2,7 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
+
 .carousel .carousel-item {
     height: 40vh;
   }
@@ -16,19 +18,98 @@
     padding-bottom: .5rem;
 }
 h4{
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 .content{
-    border: 1px solid rgb(141, 141, 200);
-    margin: 1rem 3rem 1rem 3rem;
+    border: 1px solid #232f34;
+    margin: 2vw 5vw 2vw 5vw;
     padding: 3rem;
 }
 .text{
     /* padding: 2rem; */
     font-size:larger;
+    margin-top: 1rem;
 }
 
 .link-to:hover {
     text-decoration: none;
     color: white;
 }
+.carousel-control-prev-icon{
+    transform: translate3d(0,-50%,0) rotate(-135deg);
+}
+
+.arrow {
+	position: absolute;
+	top: 50%;
+	width: 2vmin;
+	height: 2vmin;
+	background: transparent;
+	border-top: 1vmin solid white;
+	border-right: 1vmin solid white;
+	box-shadow: 0 0 0 lightgray;
+	transition: all 200ms ease;
+}
+.left {
+	left: 5rem;
+	transform: translate3d(0,-50%,0) rotate(-135deg);
+}
+
+.right {
+	right: 5rem;
+	transform: translate3d(0,-50%,0) rotate(45deg);
+}
+	
+.arrow:hover {
+	border-color: #f8aa33;
+	box-shadow: 0.5vmin -0.5vmin 0 white;
+}
+.content h4{
+    border-bottom: 1px solid #A9A9A9 ;
+}
+
+.btn-about{
+    border-radius: 4px;
+    border-color: #2196F3;
+    border: none;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 18px;
+    padding: 12px;
+    width: 125px;
+    /* transition: all 0.5s; */
+    cursor: pointer;
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+    border-color:  #4a6572;
+    /* box-shadow :0px 4px 4px rgba(0, 0, 0, 0.25); */
+    animation: text 2s ease;
+}
+.btn-about span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.btn-about span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+.btn-about:hover{
+    background-color: #4a6572;
+    color: aliceblue;
+}
+  
+.btn-about:hover span {
+    padding-right: 25px;
+    
+  }
+  
+.btn-about:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

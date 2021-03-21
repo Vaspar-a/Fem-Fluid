@@ -2,7 +2,6 @@
   margin: 0px auto;
   padding: 0px auto;
 }
-
 .row-contents {
   margin: 0px auto;
   padding: 50px 0px;
@@ -11,10 +10,11 @@
 }
 
 .footer {
-  background-color: rgb(186, 207, 212);
+  background-color: #344955;
   margin: 0px auto;
   padding: 20px 0px 0px 0px;
   width: 100vw;
+  color: aliceblue;
 }
 
 .jumbotron {
@@ -22,13 +22,13 @@
   margin: 0px auto;
   border-radius: 0px;
   background-color: rgb(23, 3, 58);
-  color: rgb(255, 250, 240);
+  color: aliceblue;
 }
 
 .address {
   font-size: 80%;
   margin: 0px;
-  color: #0f0f0f;
+  color: aliceblue;
 }
 
 .address a, address a  {

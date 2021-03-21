@@ -101,7 +101,7 @@ header {
 
 .menu-text {
     font-size: 1.2rem;
-    color: #1D3557;
+    color:aliceblue;
 }
 
 .img {
@@ -115,11 +115,11 @@ header {
     list-style: none;
     cursor: pointer;
     align-self: center;
-    color: #1D3557;
+    color: aliceblue;
 }
 
 .link-active {
-    border-bottom: 3.5px solid #00BFA6;
+    border-bottom: 3.5px solid #f8aa33;
     border-radius : 0% 100% 0% 100% / 100% 100% 0% 0% ;
 }
 
@@ -161,7 +161,7 @@ header {
         position: fixed;
         top: 0;
         left: 0;
-        background-color: aliceblue; 
+        background-color: #4a6572; 
         /* rgba(77, 210, 193, 0.4) */
         height: 100vh;
         width: 100%;
@@ -183,7 +183,7 @@ header {
     
     .nav-links .link {
         opacity: 0;
-        color: rgb(2, 6, 26);
+        color: aliceblue;
         transition: border-bottom 0.2s ease 0.1s;
     }
     
