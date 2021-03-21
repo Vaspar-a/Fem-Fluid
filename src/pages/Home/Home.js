@@ -91,7 +91,7 @@ export default class Home extends Component {
                 <span className="sr-only">Next</span>
               </a>
             </div>
-            <h1 className="title">About us</h1>
+            {/* <h1 className="title">About us</h1> */}
             <div className="content">
               <h4>Next Generation Smart Materials</h4>
               <p className="text">
@@ -99,19 +99,21 @@ export default class Home extends Component {
                 development and application of new generaton of product.
               </p>
               <p className="text">
-                &#8921; Our knowlwdge stems from our core group who specialize
-                in design, synthesis and mechanier. With basic knowlwdge our
-                company has established a strong lab quuipped for performance as
-                weel as application driven instrument that simulate real world
-                conditions.
+                &#8921; Our knowlwdge stems from our core group who specialize in design, 
+                synthesis and mechanier. With basic knowlwdge our company has established 
+                a strong lab quuipped for performance as weel as application driven instrument 
+                that simulate real world conditions.
               </p>
+              <p className="text">&#8921; As a company Fem Fluid is dedicated and drawn 
+              by a core to belief to convert basic sciences into useful technologies
+               and products.</p>
               <p className="text">
-                &#8921; To know more about us..click below button or go to about
+                &#8921; To know more about us, click below button or go to about section
                 section
               </p>
               {/* <Navlink></Navlink> */}
               <NavLink to="about" className="link-to">
-                <button className="btn btn-outline-primary">About</button>
+                <button className="btn-about"><span>About Us</span></button>
               </NavLink>
             </div>
           </div>
